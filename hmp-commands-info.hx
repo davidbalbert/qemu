@@ -263,6 +263,20 @@ Show the active virtual memory mappings.
 ETEXI
 
     {
+        .name       = "pg",
+        .args_type  = "",
+        .params     = "",
+        .help       = "show the page table",
+        .mhandler.cmd = pg_info,
+    },
+
+STEXI
+@item info pg
+@findex pg
+Show the page table.
+ETEXI
+
+    {
         .name       = "mtree",
         .args_type  = "",
         .params     = "",
